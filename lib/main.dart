@@ -92,9 +92,10 @@ class _HomeState extends State<Home> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => MovieDetails()));
+                                        builder: (context) =>
+                                            MovieDetails(movie: movie)));
                               },
-                              child: Text('Read More'))
+                              child: const Text('Read More'))
                         ],
                       ),
                     )
