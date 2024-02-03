@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/components/movie_card.dart';
 import 'package:movie_app/models/movie.dart';
 
 class MovieDetails extends StatelessWidget {
@@ -9,7 +10,12 @@ class MovieDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(movie.title),
+        title: const Text('Movie Details'),
+      ),
+      body: Container(
+        child: Column(
+          children: [MovieCard(movie: movie)],
+        ),
       ),
     );
   }
